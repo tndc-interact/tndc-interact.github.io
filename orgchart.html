@@ -13,13 +13,12 @@
 
         // For each orgchart box, provide the name, manager, and tooltip to show.
         data.addRows([
-          [{v:'Mike', f:'Mike<div style="color:red; font-style:italic">President</div>'},
-           '', 'The President'],
-          [{v:'Jim', f:'Jim<div style="color:red; font-style:italic">Vice President</div>'},
-           'Mike', 'VP'],
-          ['Alice', 'Mike', ''],
-          ['Bob', 'Jim', 'Bob Sponge'],
-          ['Carol', 'Bob', '']
+          [{v:0, f:'Don Falk<div style="font-style:italic">CEO</div>'},
+           '', 'CEO'],
+          [{v:1, f:'Paul Carney<div style="font-style:italic">Chief Financial Officer</div>'},
+           0, 'CFO'],
+          [{v:2, f:'Elizabeth Orlin<div style="font-style:italic">Chief Operating Officer</div>'},
+           0, 'COO']
         ]);
 
         // Create the chart.
